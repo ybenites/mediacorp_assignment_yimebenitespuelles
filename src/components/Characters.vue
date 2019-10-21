@@ -36,8 +36,7 @@ export default {
     animation: playDragonAttack 0.4s steps(8) infinite;
     &:before{
         content: " ";
-        content: " ";
-        background-image: url(/img/fire.325aa53d.gif);
+        background-image: url('./../assets/fire.gif');
         width: 100px;
         height: 100px;
         top: -85px;
