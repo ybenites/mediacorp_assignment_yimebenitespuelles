@@ -29,7 +29,7 @@ export default {
               return ;
           }
 
-          this.dragonAttack()
+          this.dragonAttack();
       },
       blast(){
           this.updateAnimation();
@@ -48,6 +48,7 @@ export default {
           const heal=Math.max(this.damage(),10);
         //   increase health as maximum to 100
           this.warrior.health=Math.min(currentWarriorHealth+heal,100);
+        //   adding commentary
           this.arrayCommentaries.push(`Warrior Heal ${heal}`);
           
 

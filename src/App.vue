@@ -5,10 +5,12 @@
         <StatusBar :characterName="warrior.characterName" :characterImage="warrior.characterImage" :health="warrior.health"></StatusBar>
         <StatusBar :characterName="dragon.characterName" :characterImage="dragon.characterImage" :health="dragon.health"></StatusBar>
       </div>
+      <!-- players -->
       <div class="characters">
         <Character :class="{hideOpacity:(updateWinOrLost==='Lost' && updateWinOrLost!=='')}" :isAttacking="isAttacking" class="warrior" :characterImageSprite="warrior.characterImageSprite" ></Character>
         <Character :class="{hideOpacity:(updateWinOrLost==='Win' && updateWinOrLost!=='')}"  :isAttacking="isAttacking" class="dragon" :characterImageSprite="dragon.characterImageSprite"></Character>
       </div>
+      <!-- controls and commentary start here -->
       <div class="commentary-controls">
         <transition name="fade">
           <buttonsIntro :ShowOverlayHowToPlay="ShowOverlayHowToPlay" :ShowControlsPlay="ShowControlsPlay" v-if="!ShowControlsPlay" @updateShowOverlayHowToPlay="updateShowOverlayHowToPlay" @updateShowControlsPlay="updateShowControlsPlay"></buttonsIntro>
